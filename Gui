@@ -62,7 +62,7 @@ local DiscordLib = loadstring(game:HttpGet('https://raw.githubusercontent.com/gi
  local plrmain = game.Players.LocalPlayer 
  getgenv().equiptools = v 
  if not getgenv().equiptools then plrmain.Character.Humanoid:UnequipTools() end 
- while equiptools do wait()3 
+ while equiptools do wait()
  for i, v in pairs(game.Players.LocalPlayer:FindFirstChild("Backpack"):GetChildren()) do 
  if v:IsA("Tool") or v:IsA("HopperBin") or v:IsA("BackpackItem") then 
  v.Parent = plrmain.Character 
