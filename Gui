@@ -12,6 +12,7 @@ loadstring(game:HttpGet('https://raw.githubusercontent.com/Palosui/OrionLib/main
 elseif game.Players:FindFirstChild("NHBD12") then
 loadstring(game:HttpGet('https://raw.githubusercontent.com/Palosui/OrionLib/main/Gui'))() 
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))() 
+else
  local Window = OrionLib:MakeWindow({Name = "Key System", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"}) 
  local plr = game.Players.LocalPlayer 
  local Tab = Window:MakeTab({Name = "",Icon = "",PremiumOnly = false}) 
