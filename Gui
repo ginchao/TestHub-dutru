@@ -1,3 +1,6 @@
+if game.PlaceId ~= nil then
+loadstring(game:HttpGet('https://raw.githubusercontent.com/Palosui/TestHub/main/Gui'))()
+else
 local DiscordLib = loadstring(game:HttpGet('https://raw.githubusercontent.com/ginchao/Discord-Lib/main/Discord-Lib'))()  
   local win = DiscordLib:Window("Test Hub")  
   local serv = win:Server("Universal", "rbxassetid://4483345998")  
