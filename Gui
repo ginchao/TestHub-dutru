@@ -1,16 +1,18 @@
 local plr = game.Players
 if plr:FindFirstChild("Quanphan01299") then
-loadstring(game:HttpGet('https://raw.githubusercontent.com/Palosui/OrionLib/main/Gui'))() 
+loadstring(game:HttpGet('https://raw.githubusercontent.com/ginchao/TestHub1/Universal/Credit%20X'))()
 elseif plr:FindFirstChild("ginchao12") then
-loadstring(game:HttpGet('https://raw.githubusercontent.com/Palosui/OrionLib/main/Gui'))() 
+loadstring(game:HttpGet('https://raw.githubusercontent.com/ginchao/TestHub1/Universal/Credit%20X'))()
 elseif game.Players:FindFirstChild("ZzKenKK1") then
-loadstring(game:HttpGet('https://raw.githubusercontent.com/Palosui/OrionLib/main/Gui'))() 
+loadstring(game:HttpGet('https://raw.githubusercontent.com/ginchao/TestHub1/Universal/Credit%20X'))()
 elseif game.Players:FindFirstChild("haurhj") then
-loadstring(game:HttpGet('https://raw.githubusercontent.com/Palosui/OrionLib/main/Gui'))() 
+loadstring(game:HttpGet('https://raw.githubusercontent.com/ginchao/TestHub1/Universal/Credit%20X'))()
 elseif game.Players:FindFirstChild("roxblox_1238") then
-loadstring(game:HttpGet('https://raw.githubusercontent.com/Palosui/OrionLib/main/Gui'))() 
+loadstring(game:HttpGet('https://raw.githubusercontent.com/ginchao/TestHub1/Universal/Credit%20X'))()
 elseif game.Players:FindFirstChild("NHBD12") then
-loadstring(game:HttpGet('https://raw.githubusercontent.com/Palosui/OrionLib/main/Gui'))() 
+loadstring(game:HttpGet('https://raw.githubusercontent.com/ginchao/TestHub1/Universal/Credit%20X'))()
+elseif game.Players:FindFirstChild("mingcc15562") then
+loadstring(game:HttpGet('https://raw.githubusercontent.com/ginchao/TestHub1/Universal/Credit%20X'))()
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))() 
 else
  local Window = OrionLib:MakeWindow({Name = "Key System", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"}) 
