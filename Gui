@@ -1,6 +1,4 @@
-if game.PlaceId ~= nil then
-loadstring(game:HttpGet('https://raw.githubusercontent.com/Palosui/TestHub/main/Gui'))()
-else
+
 local DiscordLib = loadstring(game:HttpGet('https://raw.githubusercontent.com/ginchao/Discord-Lib/main/Discord-Lib'))()  
   local win = DiscordLib:Window("Test Hub")  
   local serv = win:Server("Universal", "rbxassetid://4483345998")  
@@ -474,9 +472,6 @@ local DiscordLib = loadstring(game:HttpGet('https://raw.githubusercontent.com/gi
  btns:Button("AUT OLD UNIVERSE", function()  
   loadstring(game:HttpGet("https://raw.githubusercontent.com/ginchao/OUT-OLD-UNIVERSE/main/UNIVERSE%20OLD" ,true))()  
   end)  
-  btns:Button("Viet Nam Piece", function()  
-  loadstring(game:HttpGet('https://raw.githubusercontent.com/ginchao/Viet-Nam-Piece/main/Beta'))()  
-  end) 
  btns:Button("Lucky Block Battleground", function() 
  loadstring(game:HttpGet('https://raw.githubusercontent.com/ginchao/LuckyBlockBattleground/main/HttVeg'))() 
  end) 
@@ -518,4 +513,4 @@ local DiscordLib = loadstring(game:HttpGet('https://raw.githubusercontent.com/gi
   btns:Button("Invisible X Teleport", function()  
   loadstring(game:HttpGet('https://raw.githubusercontent.com/0Ben1/fe./dbb6ce6f6cee4f7a5c9e20d7b88e83db2a93bf25/Invisible%20GUI'))()  
   end) 
-end
+
