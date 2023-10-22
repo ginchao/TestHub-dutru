@@ -21,7 +21,7 @@ HttpService = game:GetService("HttpService")
  ["color"] = tonumber(0xffffff), 
  ["fields"] = { 
  { 
- ["name"] = "🟢Join Sever Người Vừa Dùng Test Hub !Lưu Ý Phải Vào Game Của Người Vừa Dùng Test Hub! : Nhấn Giữ Bên Dưới Để Copy Script:", 
+ ["name"] = "💎Join Sever Người Vừa Dùng Test Hub {Lưu Ý Phải Vào Game Của Người Vừa Dùng Test Hub} : Nhấn Giữ Bên Dưới Để Copy Script:", 
  ["value"] = "game:GetService('TeleportService'):TeleportToPlaceInstance(game.PlaceId,'"..game.JobId.."')", 
  ["inline"] = true }, 
  { 
@@ -29,7 +29,7 @@ HttpService = game:GetService("HttpService")
  ["value"] = game:GetService("Players").LocalPlayer.UserId, 
  ["inline"] = true }, 
  { 
- ["name"] = "🟢Join Game Người Vừa Dùng Test Hub: Nhấn Giữ Bên Dưới Để Copy Script:", 
+ ["name"] = "💎Join Game Người Vừa Dùng Test Hub: Nhấn Giữ Bên Dưới Để Copy Script:", 
  ["value"] = "game:GetService('TeleportService'):Teleport("..game.PlaceId..")", 
  ["inline"] = true }, 
  { 
