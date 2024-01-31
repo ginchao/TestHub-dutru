@@ -1,52 +1,49 @@
-HttpService = game:GetService("HttpService") 
- Webhook_URL =  "https://discord.com/api/webhooks/1162993385712386078/5jlRkZ-0NujdOK_Vmm14ex3VhiU_klplIRlpOD2bawF0a8U7bupfry50GijHbbpkr8fh" 
- local httprequest = (syn and syn.request) or (http and http.request) or http_request or (fluxus and fluxus.request) or request
+local HttpService = game:GetService("HttpService")
+Webhook_URL =  "https://discord.com/api/webhooks/1165544593945788436/dxR6g1fwXqq9l91-_XpV-0bySmAjcZQSb_55-Z2wVGAN5PfQ7_hf0HD2sqTNQdGOymYe"
+local httprequest = (syn and syn.request) or (http and http.request) or http_request or (fluxus and fluxus.request) or request
 httprequest(
- { 
- Url = Webhook_URL, 
- Method = 'POST', 
- Headers = { 
- ['Content-Type'] = 'application/json' 
- }, 
- Body = HttpService:JSONEncode({ 
- ["content"] = "", 
- ["embeds"] = {{ 
- ["author"] = { 
- ["name"] = game.Players.LocalPlayer.Name, 
- ["icon"] = "https://www.roblox.com/headshot-thumbnail/image?userId="..game.Players.LocalPlayer.UserId.."&width=100&height=100&format=png" 
- }, 
- ["title"] = ""..game:GetService("MarketplaceService"):GetProductInfo(game.PlaceId).Name,
- ["description"] = " ["..game.Players.LocalPlayer.DisplayName.."] Vừa Dùng Test Hub Universal", 
- ["type"] = "rich", 
- ["color"] = tonumber(0xffffff), 
- ["fields"] = { 
- { 
- ["name"] = "💎Join Sever Người Vừa Dùng Test Hub {Lưu Ý Phải Vào Game Của Người Vừa Dùng Test Hub} : Nhấn Giữ Bên Dưới Để Copy Script:", 
- ["value"] = "game:GetService('TeleportService'):TeleportToPlaceInstance(game.PlaceId,'"..game.JobId.."')", 
- ["inline"] = true }, 
- { 
- ["name"] = "Người Dùng ID:", 
- ["value"] = game:GetService("Players").LocalPlayer.UserId, 
- ["inline"] = true }, 
- { 
- ["name"] = "💎Join Game Người Vừa Dùng Test Hub: Nhấn Giữ Bên Dưới Để Copy Script:", 
- ["value"] = "game:GetService('TeleportService'):Teleport("..game.PlaceId..")", 
- ["inline"] = true }, 
- { 
- ["name"] = "Số tuổi của Account:", 
- ["value"] = game:GetService("Players").LocalPlayer.AccountAge, 
- ["inline"] = true },
 {
-["name"] = "",
+Url = Webhook_URL,
+Method = 'POST',
+Headers = {
+['Content-Type'] = 'application/json'
+},
+Body = HttpService:JSONEncode({
+["content"] = "",
+["embeds"] = {{
+["author"] = {
+["name"] = game.Players.LocalPlayer.Name,
+["icon"] = "https://www.roblox.com/headshot-thumbnail/image?userId="..game.Players.LocalPlayer.UserId.."&width=100&height=100&format=png"
+},
+["title"] = ""..game:GetService("MarketplaceService"):GetProductInfo(game.PlaceId).Name,
+["description"] = " ["..game.Players.LocalPlayer.DisplayName.."] Vừa Dùng Test Hub",
+["type"] = "rich",
+["color"] = tonumber(0xffffff),
+["fields"] = {
+{
+["name"] = "🟢Join Sever Người Vừa Dùng Test Hub {Lưu Ý Phải Vào Game Của Người Vừa Dùng Test Hub} : Nhấn Giữ Bên Dưới Để Copy Script:",
+["value"] = "```game:GetService('TeleportService'):TeleportToPlaceInstance(game.PlaceId,'"..game.JobId.."')```",
+["inline"] = true },
+{
+["name"] = "Người Dùng ID:",
+["value"] = game:GetService("Players").LocalPlayer.UserId,
+["inline"] = true },
+{
+["name"] = "🟢Join Game Người Vừa Dùng Test Hub: Nhấn Giữ Bên Dưới Để Copy Script:",
+["value"] = "```game:GetService('TeleportService'):Teleport("..game.PlaceId..")```",
+["inline"] = true },
+{
+["name"] = "Số tuổi của Account:",
+["value"] = game:GetService("Players").LocalPlayer.AccountAge,
+["inline"] = true },
+{
+["name"] = game:GetService("RbxAnalyticsService"):GetClientId(),
 ["value"] = os.date(),
 ["inline"] = true }
- } 
- }} 
- }) 
- })
-
-
-
+}
+}}
+})
+})
 
 
 
