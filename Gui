@@ -39,11 +39,5 @@ Body = HttpService:JSONEncode({
 
 
 
-
-
-
-
-
-
  loadstring(game:HttpGet('https://raw.githubusercontent.com/ginchao/TestHub1/Universal/Credit%20X'))()
  
